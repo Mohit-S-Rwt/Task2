@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #607d8b;
+  color: white;
+}
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  margin: 0; 
+  padding: 10px 20px; 
+  background-color: #607d8b; 
+  z-index: 10; 
+}
+
+.note-input {
+  position: fixed; 
+  top: 60px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 100%; 
+  max-width: 600px; 
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  z-index: 10; 
+}
+
+.note-input input {
+  flex: 1; 
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.note-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-input button:hover {
+  background-color: #45a049;
+}
+
+.notes-list {
+  margin-top: 120px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.note {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 15px;
+  width: 250px;
+  text-align: left;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note p {
+  margin: 0 0 15px;
+}
+
+.note button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note button:hover {
+  background-color: #d32f2f;
+}
